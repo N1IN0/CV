@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Molina Rubio | Junior Developer & AI Student</title>
+    <meta name="description" content="Portfolio of Daniel Molina Rubio — Junior Developer specializing in back-end development with Java, Spring Boot, and RESTful APIs. Currently studying Artificial Intelligence at Coventry University.">
+    <meta name="keywords" content="Daniel Molina Rubio, Developer, Java, Spring Boot, AI, Portfolio, Madrid">
+    <meta name="author" content="Daniel Molina Rubio">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Daniel Molina Rubio | Junior Developer & AI Student">
+    <meta property="og:description" content="Junior Developer specializing in back-end development with Java, Spring Boot, and cloud solutions.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>DMR<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-orb hero-orb--1"></div>
+            <div class="hero-orb hero-orb--2"></div>
+            <div class="hero-orb hero-orb--3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <i class="fas fa-circle" style="font-size: 6px; color: #22c55e;"></i>
+                <span>Open to opportunities</span>
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">Daniel Molina<br>Rubio</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+            </p>
+            <p class="hero-description reveal">
+                Junior Developer specializing in back-end development with expertise in 
+                <span class="highlight">Java</span>, <span class="highlight">Spring Boot</span>, and 
+                <span class="highlight">RESTful APIs</span>. Currently pursuing a degree in 
+                <span class="highlight">Artificial Intelligence</span> at Coventry University.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#contact" class="btn btn--primary">
+                    <span>Get in Touch</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#projects" class="btn btn--secondary">
+                    <span>View Projects</span>
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-label">Tech Diplomas</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <h2 class="section-title">Passionate Developer<br><span class="gradient-text">& AI Enthusiast</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I'm a junior developer based in <strong>Madrid, Spain</strong>, with a strong foundation in 
+                        back-end development and cloud technologies. My experience spans fintech platforms, 
+                        web development, and microservices architecture.
+                    </p>
+                    <p>
+                        Currently in my studies at <strong>Coventry University</strong> pursuing a Bachelor's Degree 
+                        in Artificial Intelligence, I bring a unique combination of hands-on development experience 
+                        and academic knowledge. I hold two Higher Technician Diplomas — in Web Application Development 
+                        and Multi-platform Application Development.
+                    </p>
+                    <p>
+                        Beyond coding, I'm a former youth football coach and lifeguard, which has shaped my 
+                        leadership, communication, and problem-solving skills. I'm eager to contribute to 
+                        dynamic engineering teams building robust, scalable solutions.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="about-highlight">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Madrid, Spain</span>
+                        </div>
+                        <div class="about-highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>AI Student @ Coventry</span>
+                        </div>
+                        <div class="about-highlight">
+                            <i class="fas fa-cloud"></i>
+                            <span>Azure Certified</span>
+                        </div>
+                        <div class="about-highlight">
+                            <i class="fas fa-language"></i>
+                            <span>English: Advanced</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card reveal">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="code-dot code-dot--red"></span>
+                                <span class="code-dot code-dot--yellow"></span>
+                                <span class="code-dot code-dot--green"></span>
+                            </div>
+                            <span class="code-filename">daniel.json</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="code-bracket">{</span>
+  <span class="code-key">"name"</span>: <span class="code-string">"Daniel Molina Rubio"</span>,
+  <span class="code-key">"role"</span>: <span class="code-string">"Junior Developer"</span>,
+  <span class="code-key">"location"</span>: <span class="code-string">"Madrid, Spain"</span>,
+  <span class="code-key">"studying"</span>: <span class="code-string">"Artificial Intelligence"</span>,
+  <span class="code-key">"university"</span>: <span class="code-string">"Coventry University"</span>,
+  <span class="code-key">"interests"</span>: <span class="code-bracket">[</span>
+    <span class="code-string">"Back-end Development"</span>,
+    <span class="code-string">"Cloud & Azure"</span>,
+    <span class="code-string">"Microservices"</span>,
+    <span class="code-string">"Machine Learning"</span>
+  <span class="code-bracket">]</span>,
+  <span class="code-key">"available"</span>: <span class="code-bool">true</span>
+<span class="code-bracket">}</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">Where I've<br><span class="gradient-text">Made an Impact</span></h2>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-title">Web Developer Internship</h3>
+                                <p class="timeline-company">Panacash | STEM, Madrid</p>
+                            </div>
+                            <span class="timeline-badge">Internship</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Programmed front-end web interfaces for a fintech analytics platform using PHP, JavaScript, HTML, and CSS</li>
+                            <li>Implemented a professional profile analysis platform utilizing PHP, JavaScript, HTML, CSS, and SQL</li>
+                            <li>Built custom stock and cryptocurrency dashboards, account management, notifications, and security features</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Fintech</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-title">Web Developer Internship</h3>
+                                <p class="timeline-company">Eleven Trading & Finance | 2019 — Madrid</p>
+                            </div>
+                            <span class="timeline-badge">Internship</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Recruited at 17 years old, working from university to cover web-related tasks</li>
+                            <li>Set up platform configurations and end-to-end automation</li>
+                            <li>Contributed to database design and full-stack web development using PHP, JavaScript, and CSS</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Database Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-title">Youth Football Coach</h3>
+                                <p class="timeline-company">C.F. Villalba | Oct 2023 — 2024, Madrid</p>
+                            </div>
+                            <span class="timeline-badge timeline-badge--alt">Leadership</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Coached youth football teams and tournaments, designing structured training sessions</li>
+                            <li>Participated in various workshops with parents and stakeholders</li>
+                            <li>Coordinated team schedules and events</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Coaching</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div>
+                                <h3 class="timeline-title">Lifeguard</h3>
+                                <p class="timeline-company">Program AL FABAL | 2019 — 2024, Madrid</p>
+                            </div>
+                            <span class="timeline-badge timeline-badge--alt">Safety</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Monitored aquatic facilities, ensuring a safe environment for all visitors</li>
+                            <li>Ensured strict adherence to safety protocols and emergency procedures</li>
+                            <li>Coached and enforced water safety guidelines and hazard mitigation practices</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Safety</span>
+                            <span class="tag">First Aid</span>
+                            <span class="tag">Responsibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-rocket"></i> Projects</span>
+                <h2 class="section-title">Things I've<br><span class="gradient-text">Built & Shipped</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="project-number">01</div>
+                    <h3 class="project-title">ERP Development Project</h3>
+                    <p class="project-org">C.Es San José & Interating School</p>
+                    <p class="project-desc">
+                        Led a full-stack development team of 6 members in building an ERP system. 
+                        Designed and managed production CRUD testing using Figma for UI/UX prototyping, 
+                        Java EE and EJBeans for the back end, and MySQL for database management.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java EE</span>
+                        <span>EJBeans</span>
+                        <span>MySQL</span>
+                        <span>Figma</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-label"><i class="fas fa-users"></i> Team Lead — 6 Members</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="project-number">02</div>
+                    <h3 class="project-title">Personal & Academic Projects</h3>
+                    <p class="project-org">De la Salle & Marketing School</p>
+                    <p class="project-desc">
+                        Architected a microservices application with a containerized infrastructure, 
+                        configuring deployment operations for full-stack experiments. Developed front-end 
+                        and collaborative web systems using Spring Boot and REST APIs.
+                    </p>
+                    <div class="project-tech">
+                        <span>Spring Boot</span>
+                        <span>REST APIs</span>
+                        <span>Microservices</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-label"><i class="fas fa-flask"></i> Academic & Personal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education</span>
+                <h2 class="section-title">Academic<br><span class="gradient-text">Background</span></h2>
+            </div>
+            <div class="education-grid">
+                <!-- Education 1 -->
+                <div class="education-card education-card--featured reveal">
+                    <div class="education-card-accent"></div>
+                    <div class="education-status">
+                        <i class="fas fa-circle" style="font-size: 6px; color: #22c55e;"></i>
+                        <span>Currently Enrolled</span>
+                    </div>
+                    <div class="education-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="education-degree">Bachelor's Degree in Artificial Intelligence</h3>
+                    <p class="education-school">Coventry University — Coventry, UK</p>
+                    <p class="education-date">2026 — Present</p>
+                </div>
+
+                <!-- Education 2 -->
+                <div class="education-card reveal">
+                    <div class="education-card-accent"></div>
+                    <div class="education-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="education-degree">Higher Technician Diploma in Web Application Development</h3>
+                    <p class="education-school">I.E.S. Dámaso Alonso & Marketing School — Madrid</p>
+                    <p class="education-date">2 Years</p>
+                </div>
+
+                <!-- Education 3 -->
+                <div class="education-card reveal">
+                    <div class="education-card-accent"></div>
+                    <div class="education-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="education-degree">Higher Technician Diploma in Multi-platform Application Development</h3>
+                    <p class="education-school">I.E.S. Dámaso Alonso & Marketing School — Madrid</p>
+                    <p class="education-date">2 Years</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-award"></i> Certifications</span>
+                <h2 class="section-title">Professional<br><span class="gradient-text">Credentials</span></h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>Microsoft Certified: Azure AI Fundamentals</h4>
+                    <p>Microsoft</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>Microsoft Certified: Azure Fundamentals</h4>
+                    <p>Microsoft</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>Microsoft Certified: Azure Data Fundamentals (DP-900)</h4>
+                    <p>Microsoft</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>AZ-900 Azure Certification</h4>
+                    <p>Microsoft</p>
+                </div>
+                <div class="cert-card reveal">
+                    <div class="cert-icon"><i class="fas fa-first-aid"></i></div>
+                    <h4>First Aid & Sports Certification</h4>
+                    <p>Certified Professional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-tools"></i> Skills</span>
+                <h2 class="section-title">Technical<br><span class="gradient-text">Arsenal</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Front-End</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Back-End & Frameworks</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Java EE</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Azure</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-vial"></i>
+                        <h3>Tools & Testing</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <i class="fas fa-comments"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">English (Advanced)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Involvement Section -->
+    <section class="section involvement" id="involvement">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-heart"></i> Involvement</span>
+                <h2 class="section-title">Beyond<br><span class="gradient-text">The Code</span></h2>
+            </div>
+            <div class="involvement-grid">
+                <div class="involvement-card reveal">
+                    <div class="involvement-icon"><i class="fas fa-futbol"></i></div>
+                    <h4>Madrid Local Soccer Group / Football</h4>
+                    <p>Active member of a local football community, participating in regular matches and tournaments.</p>
+                </div>
+                <div class="involvement-card reveal">
+                    <div class="involvement-icon"><i class="fas fa-film"></i></div>
+                    <h4>Amateur Short Film</h4>
+                    <p>Participated as an actor in a creative short film project, exploring storytelling beyond technology.</p>
+                </div>
+                <div class="involvement-card reveal">
+                    <div class="involvement-icon"><i class="fas fa-users"></i></div>
+                    <h4>Community Day Volunteer</h4>
+                    <p>Part of local community day events, contributing to neighborhood initiatives and social activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Let's Work<br><span class="gradient-text">Together</span></h2>
+                <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your team.</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:d.molinarubio@gmail.com" class="contact-card reveal">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email</h4>
+                    <p>d.molinarubio@gmail.com</p>
+                </a>
+                <a href="tel:+34640220727" class="contact-card reveal">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h4>Phone</h4>
+                    <p>+34 640 220 727</p>
+                </a>
+                <div class="contact-card reveal">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Location</h4>
+                    <p>Madrid, Spain</p>
+                </div>
+                <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" class="contact-card reveal">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h4>LinkedIn</h4>
+                    <p>Connect with me</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>DMR<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Daniel Molina Rubio</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:d.molinarubio@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Daniel Molina Rubio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
